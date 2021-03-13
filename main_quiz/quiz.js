@@ -3,8 +3,8 @@
         question: "Q1: What does HTML stand for?",
         a: "Hello To My Land",
         b: "Hey Text Markup Language",
-        c: "HyperText Markup Language",
-        d: "HyperText Mamrkup Language",
+        c: "HyperText Makeup Language",
+        d: "HyperText Markup Language",
         ans: "ans4"
     },
     {
