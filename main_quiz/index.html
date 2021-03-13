@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Login for Quiz</title>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- Row -->
+      <div class="row">
+        <!-- Sign Up -->
+        <div class="col align-center flex-col sign-up">
+          <div class="form-wrapper align-center">
+            <label id="invalid" style="color:red; visibility: hidden;"></label>
+                <label id="valid" style="color:green; visibility: hidden;"></label>
+            <form class="form sign-up" onsubmit="return validate1();"
+            action="index.html">
+              <div class="input-group">
+                <i class="bx bxs-user"></i>
+                <input type="text" id="username1" placeholder="Username" />
+                
+              </div>
+              <div class="input-group">
+                <i class="bx bx-mail-send"></i>
+                <input type="email" id="email1" placeholder="Email" />
+                
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="password" id="password1" placeholder="Password" />
+                
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="password" id="cpassword1" placeholder="Confirm password" />
+                
+              </div>
+              <button type="submit">Sign up</button>
+              <p>
+                <span>Already have an account?</span>
+                <b id="sign-in">Sign in here</b>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!-- End Sign Up -->
+        <!-- Sign In -->
+        <div class="col align-center flex-col sign-in">
+          <div class="form-wrapper align-center">
+            <form class="form sign-in" onsubmit="return validate();"
+            action="quiz.html">
+            <div class="form sign-in">
+              <div class="input-group">
+                <i class="bx bxs-user"></i>
+                <input type="text" id="username" placeholder="Username" />
+                
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="password" id="password" placeholder="Password" />
+                
+              </div>
+              <button type="submit">Sign in</button>
+              
+              <p>
+                <span> Don't have an account? </span>
+                <b id="sign-up">Sign up here</b>
+              </p>
+            </div>
+            </form>
+          </div>
+
+          
+        </div>
+        <!-- End Sign In -->
+      </div>
+      <!-- End Row -->
+      <!-- Content Section -->
+      <div class="row content-row">
+        <!-- Sign In Content -->
+        <div class="col align-items flex-col">
+          <div class="text sign-in">
+            <h2>Welcome to Quiz</h2>
+            <p>
+              
+            </p>
+          </div>
+          <div class="img sign-in">
+            <img src="images/bg1.svg" alt="" />
+          </div>
+        </div>
+
+        <!-- Sign Up Content -->
+        <div class="col align-items flex-col">
+          <div class="img sign-up">
+            <img src="images/bg2.svg" alt="" />
+          </div>
+          <div class="text sign-up">
+            <h2>Join for Quiz Comp.</h2>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Container -->
+
+    <!-- Script -->
+    <script src="index.js"></script>
+  </body>
+</html>
