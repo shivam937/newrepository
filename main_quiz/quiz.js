@@ -66,7 +66,7 @@ loadQuestion();
 
 const getCheckAnswer = () => {
     let answer;
-    answers.forEach((curAnsElem) => {              //error forEach
+    answers.forEach((curAnsElem) => {              
         if(curAnsElem.checked){
             answer = curAnsElem.id;
         }
